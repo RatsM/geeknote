@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 
-#./geeknote.py login
 from os import system, popen
-
 
 def preadlines(cmd, split=True):
     f = popen(cmd,"r")
@@ -11,6 +9,8 @@ def preadlines(cmd, split=True):
         r = r.splitlines()
     f.close()
     return r
+
+system("./geeknote.py login")
 
 system('mkdir -p data')
 
