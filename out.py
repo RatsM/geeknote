@@ -104,7 +104,7 @@ def GetUserCredentials():
 @preloaderStop
 def SearchResult(listItems, request, **kwargs):
     """Печать результатов поиска"""
-    printLine("Search request: %s" % request)
+    #printLine("Search request: %s" % request)
     printList(listItems, showByStep=config.DEF_MORELINESLIMIT, **kwargs)
 
 
@@ -182,7 +182,7 @@ def printList(listItems, title="", showSelector=False, showByStep=20, showUrl=Fa
         separator("=", title)
 
     total = len(listItems)
-    printLine("Total found: %d" % total)
+    #printLine("Total found: %d" % total)
     for key, item in enumerate(listItems):
         key += 1
 

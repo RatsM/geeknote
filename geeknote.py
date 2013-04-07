@@ -657,7 +657,7 @@ class Notes(GeekNoteConnector):
             count = config.DEF_FINDLIMIT
         else:
             count = int(count)
-        print "Search count: %s", count
+        #print "Search count: %s", count
         logging.debug("Search count: %s", count)
 
         createFilter = True if search == "*" else False
@@ -718,7 +718,7 @@ class Notes(GeekNoteConnector):
             else:
                 request += "intitle:%s" % search
 
-        logging.debug("Search request: %s", request)
+        #logging.debug("Search request: %s", request)
         return request
 
 # парсинг входного потока и подстановка аргументов
